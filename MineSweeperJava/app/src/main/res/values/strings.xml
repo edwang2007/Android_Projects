@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MineSweeper</string>
+    <string name="restart">Restart</string>
+    <string name="toggle_to_flag">Toggle to Flag</string>
+    <string name="try_a_field">Try a field</string>
+    <string name="place_a_flag">Place a flag</string>
+    <string name="enter">Enter</string>
+    <string name="change_dimensions">Change Dimensions</string>
+</resources>

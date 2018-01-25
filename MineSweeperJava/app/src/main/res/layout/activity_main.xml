@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/backgroundLayout"
+    tools:context="edwang.minesweeperjava.MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <hu.ait.minesweeper.view.MinesweeperView
+            android:id="@+id/MinesweeperView"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:padding="20dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnToggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/toggle_to_flag"/>
+            <Button
+                android:id="@+id/btnRestart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/restart"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp">
+
+            <EditText
+                android:id="@+id/etDimension"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/change_dimensions"
+                android:inputType="number"/>
+
+            <Button
+                android:id="@+id/btnDimension"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etBombs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Number of Bombs"
+                android:inputType="number"/>
+
+            <Button
+                android:id="@+id/btnBombs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
